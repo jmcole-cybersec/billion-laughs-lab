@@ -1,0 +1,11 @@
+from flask import Flask, request
+from lxml import etree
+app = Flask(__name__)
+
+@app.route("/parse", methods=["POST"])
+def parse():
+    p = etree.XMLParser(resolve_entities=True, huge_tree=True)
+    root = etree.fromstring(request.get_data(), p)
+    return f"parsed: {len(root.text or '')} chars\n"
+
+app.run(host="0.0.0.0", port=8080)
