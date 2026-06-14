@@ -52,8 +52,11 @@ Lab Setup
 Remediation checklist: 
 ==============================
 -Disable DTD and entity resolution on untrusted XML
+
 -Use a hardened parser (ex: defusedxml in Python)
+
 -Enforce amplification/expansion limit if entities are allowed
+
 -Apply size limits so oversized payloads are rejected before parsing
 
 
