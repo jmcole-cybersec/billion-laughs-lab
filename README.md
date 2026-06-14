@@ -36,6 +36,7 @@ Reference: https://en.wikipedia.org/wiki/Billion_laughs_attack
 With nine levels this results in 10^9 expansions (a billion), all generated from a <1 KB file.
 
 Classification: CWE-776
+
 Reference: https://cwe.mitre.org/data/definitions/776.html
 
 I find this type of attack fascinating, because unlike typical volumetric DDoS attacks, this
