@@ -60,7 +60,9 @@ Remediation checklist:
 Related attacks I will explore later:
 ==========================================================
 -XXE (XML External Entity)
+
 -YAML bombs
+
 -Zip/decompression bombs
 
 
