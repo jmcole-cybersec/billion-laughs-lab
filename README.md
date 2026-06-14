@@ -21,15 +21,16 @@ XML DTDs allow entities, which are text macros where '\&name;' expands to a defi
 The attack abuses recursive entities where each entity references the previous one 10 times.
 
 
+​```xml
 <?xml version="1.0"?>
 <!DOCTYPE lolz [
  <!ELEMENT lolz (#PCDATA)>
  <!ENTITY lol1 "lollollollollollollollollollol">
  <!ENTITY lol2 "&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;">
  <!ENTITY lol3 "&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;">
-
 ]>
 <lolz>&lol9;</lolz>
+​```
 -----------------------------------------------------------
 Reference: https://en.wikipedia.org/wiki/Billion_laughs_attack
 
