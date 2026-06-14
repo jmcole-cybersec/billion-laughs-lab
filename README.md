@@ -13,7 +13,7 @@ What this project demonstrates
 - Understanding and use of an XML amplification attack
 - Exploring modern parser's built in defense compared to vulnerable legacy versions
 
-===========================
+
 How Billion Laughs works
 ===========================
 
